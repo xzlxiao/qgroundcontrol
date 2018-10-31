@@ -2623,6 +2623,1153 @@ Set to 0 to disable heading hold</short_desc>
       <unit>degrees</unit>
     </parameter>
   </group>
+  <group name="Flight Test Input ACC1X">
+    <parameter default="1.0" name="FTI_ACC1X_AMP" type="FLOAT">
+      <short_desc>Test input ACC1X amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_ACC1X_BIAS" type="FLOAT">
+      <short_desc>Test input ACC1X bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_ACC1X_EN" type="INT32">
+      <short_desc>Test input ACC1X Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_ACC1X_SD" type="FLOAT">
+      <short_desc>Test input ACC1X standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_ACC1X_TIME" type="FLOAT">
+      <short_desc>Test input ACC1X dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_ACC1X_TYPE" type="INT32">
+      <short_desc>Test Input ACC1X Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input ACC1Y">
+    <parameter default="1.0" name="FTI_ACC1Y_AMP" type="FLOAT">
+      <short_desc>Test input ACC1Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_ACC1Y_BIAS" type="FLOAT">
+      <short_desc>Test input ACC1Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_ACC1Y_EN" type="INT32">
+      <short_desc>Test input ACC1Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_ACC1Y_SD" type="FLOAT">
+      <short_desc>Test input ACC1Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_ACC1Y_TIME" type="FLOAT">
+      <short_desc>Test input ACC1Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_ACC1Y_TYPE" type="INT32">
+      <short_desc>Test Input ACC1Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input ACC1Z">
+    <parameter default="1.0" name="FTI_ACC1Z_AMP" type="FLOAT">
+      <short_desc>Test input ACC1Z amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_ACC1Z_BIAS" type="FLOAT">
+      <short_desc>Test input ACC1Z bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_ACC1Z_EN" type="INT32">
+      <short_desc>Test input ACC1Z Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_ACC1Z_SD" type="FLOAT">
+      <short_desc>Test input ACC1Z standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_ACC1Z_TIME" type="FLOAT">
+      <short_desc>Test input ACC1Z dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_ACC1Z_TYPE" type="INT32">
+      <short_desc>Test Input ACC1Z Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input ACC2X">
+    <parameter default="1.0" name="FTI_ACC2X_AMP" type="FLOAT">
+      <short_desc>Test input ACC2X amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_ACC2X_BIAS" type="FLOAT">
+      <short_desc>Test input ACC2X bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_ACC2X_EN" type="INT32">
+      <short_desc>Test input ACC2X Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_ACC2X_SD" type="FLOAT">
+      <short_desc>Test input ACC2X standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_ACC2X_TIME" type="FLOAT">
+      <short_desc>Test input ACC2X dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_ACC2X_TYPE" type="INT32">
+      <short_desc>Test Input ACC2X Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input ACC2Y">
+    <parameter default="1.0" name="FTI_ACC2Y_AMP" type="FLOAT">
+      <short_desc>Test input ACC2Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_ACC2Y_BIAS" type="FLOAT">
+      <short_desc>Test input ACC2Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_ACC2Y_EN" type="INT32">
+      <short_desc>Test input ACC2Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_ACC2Y_SD" type="FLOAT">
+      <short_desc>Test input ACC2Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_ACC2Y_TIME" type="FLOAT">
+      <short_desc>Test input ACC2Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_ACC2Y_TYPE" type="INT32">
+      <short_desc>Test Input ACC2Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input ACC2Z">
+    <parameter default="1.0" name="FTI_ACC2Z_AMP" type="FLOAT">
+      <short_desc>Test input ACC2Z amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_ACC2Z_BIAS" type="FLOAT">
+      <short_desc>Test input ACC2Z bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_ACC2Z_EN" type="INT32">
+      <short_desc>Test input ACC2Z Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_ACC2Z_SD" type="FLOAT">
+      <short_desc>Test input ACC2Z standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_ACC2Z_TIME" type="FLOAT">
+      <short_desc>Test input ACC2Z dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_ACC2Z_TYPE" type="INT32">
+      <short_desc>Test Input ACC2Z Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input BARO">
+    <parameter default="1.0" name="FTI_BARO_AMP" type="FLOAT">
+      <short_desc>Test input BARO amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_BARO_BIAS" type="FLOAT">
+      <short_desc>Test input BARO bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_BARO_EN" type="INT32">
+      <short_desc>Test input BARO Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_BARO_SD" type="FLOAT">
+      <short_desc>Test input BARO standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_BARO_TIME" type="FLOAT">
+      <short_desc>Test input BARO dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_BARO_TYPE" type="INT32">
+      <short_desc>Test Input BARO Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input BAT_C">
+    <parameter default="1.0" name="FTI_BAT_C_AMP" type="FLOAT">
+      <short_desc>Test input BAT_C amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_BAT_C_BIAS" type="FLOAT">
+      <short_desc>Test input BAT_C bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_BAT_C_EN" type="INT32">
+      <short_desc>Test input BAT_C Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_BAT_C_SD" type="FLOAT">
+      <short_desc>Test input BAT_C standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_BAT_C_TIME" type="FLOAT">
+      <short_desc>Test input BAT_C dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_BAT_C_TYPE" type="INT32">
+      <short_desc>Test Input BAT_C Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input BAT_V">
+    <parameter default="1.0" name="FTI_BAT_V_AMP" type="FLOAT">
+      <short_desc>Test input BAT_V amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_BAT_V_BIAS" type="FLOAT">
+      <short_desc>Test input BAT_V bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_BAT_V_EN" type="INT32">
+      <short_desc>Test input BAT_V Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_BAT_V_SD" type="FLOAT">
+      <short_desc>Test input BAT_V standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_BAT_V_TIME" type="FLOAT">
+      <short_desc>Test input BAT_V dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_BAT_V_TYPE" type="INT32">
+      <short_desc>Test Input BAT_V Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GPS_EPH">
+    <parameter default="1.0" name="FTI_GPS_EPH_AMP" type="FLOAT">
+      <short_desc>Test input GPS_EPH amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GPS_EPH_BIAS" type="FLOAT">
+      <short_desc>Test input GPS_EPH bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GPS_EPH_EN" type="INT32">
+      <short_desc>Test input GPS_EPH Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GPS_EPH_SD" type="FLOAT">
+      <short_desc>Test input GPS_EPH standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GPS_EPH_TIME" type="FLOAT">
+      <short_desc>Test input GPS_EPH dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GPS_EPH_TYPE" type="INT32">
+      <short_desc>Test Input GPS_EPH Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GPS_EPV">
+    <parameter default="1.0" name="FTI_GPS_EPV_AMP" type="FLOAT">
+      <short_desc>Test input GPS_EPV amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GPS_EPV_BIAS" type="FLOAT">
+      <short_desc>Test input GPS_EPV bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GPS_EPV_EN" type="INT32">
+      <short_desc>Test input GPS_EPV Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GPS_EPV_SD" type="FLOAT">
+      <short_desc>Test input GPS_EPV standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GPS_EPV_TIME" type="FLOAT">
+      <short_desc>Test input GPS_EPV dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GPS_EPV_TYPE" type="INT32">
+      <short_desc>Test Input GPS_EPV Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GYRO1X">
+    <parameter default="1.0" name="FTI_GYRO1X_AMP" type="FLOAT">
+      <short_desc>Test input GYRO1X amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GYRO1X_BIAS" type="FLOAT">
+      <short_desc>Test input GYRO1X bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO1X_EN" type="INT32">
+      <short_desc>Test input GYRO1X Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GYRO1X_SD" type="FLOAT">
+      <short_desc>Test input GYRO1X standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GYRO1X_TIME" type="FLOAT">
+      <short_desc>Test input GYRO1X dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO1X_TYPE" type="INT32">
+      <short_desc>Test Input GYRO1X Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GYRO1Y">
+    <parameter default="1.0" name="FTI_GYRO1Y_AMP" type="FLOAT">
+      <short_desc>Test input GYRO1Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GYRO1Y_BIAS" type="FLOAT">
+      <short_desc>Test input GYRO1Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO1Y_EN" type="INT32">
+      <short_desc>Test input GYRO1Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GYRO1Y_SD" type="FLOAT">
+      <short_desc>Test input GYRO1Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GYRO1Y_TIME" type="FLOAT">
+      <short_desc>Test input GYRO1Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO1Y_TYPE" type="INT32">
+      <short_desc>Test Input GYRO1Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GYRO1Z">
+    <parameter default="1.0" name="FTI_GYRO1Z_AMP" type="FLOAT">
+      <short_desc>Test input GYRO1Z amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GYRO1Z_BIAS" type="FLOAT">
+      <short_desc>Test input GYRO1Z bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO1Z_EN" type="INT32">
+      <short_desc>Test input GYRO1Z Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GYRO1Z_SD" type="FLOAT">
+      <short_desc>Test input GYRO1Z standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GYRO1Z_TIME" type="FLOAT">
+      <short_desc>Test input GYRO1Z dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO1Z_TYPE" type="INT32">
+      <short_desc>Test Input GYRO1Z Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GYRO2X">
+    <parameter default="1.0" name="FTI_GYRO2X_AMP" type="FLOAT">
+      <short_desc>Test input GYRO2X amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GYRO2X_BIAS" type="FLOAT">
+      <short_desc>Test input GYRO2X bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO2X_EN" type="INT32">
+      <short_desc>Test input GYRO2X Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GYRO2X_SD" type="FLOAT">
+      <short_desc>Test input GYRO2X standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GYRO2X_TIME" type="FLOAT">
+      <short_desc>Test input GYRO2X dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO2X_TYPE" type="INT32">
+      <short_desc>Test Input GYRO2X Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GYRO2Y">
+    <parameter default="1.0" name="FTI_GYRO2Y_AMP" type="FLOAT">
+      <short_desc>Test input GYRO2Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GYRO2Y_BIAS" type="FLOAT">
+      <short_desc>Test input GYRO2Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO2Y_EN" type="INT32">
+      <short_desc>Test input GYRO2Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GYRO2Y_SD" type="FLOAT">
+      <short_desc>Test input GYRO2Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GYRO2Y_TIME" type="FLOAT">
+      <short_desc>Test input GYRO2Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO2Y_TYPE" type="INT32">
+      <short_desc>Test Input GYRO2Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input GYRO2Z">
+    <parameter default="1.0" name="FTI_GYRO2Z_AMP" type="FLOAT">
+      <short_desc>Test input GYRO2Z amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_GYRO2Z_BIAS" type="FLOAT">
+      <short_desc>Test input GYRO2Z bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO2Z_EN" type="INT32">
+      <short_desc>Test input GYRO2Z Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_GYRO2Z_SD" type="FLOAT">
+      <short_desc>Test input GYRO2Z standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_GYRO2Z_TIME" type="FLOAT">
+      <short_desc>Test input GYRO2Z dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_GYRO2Z_TYPE" type="INT32">
+      <short_desc>Test Input GYRO2Z Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input MAG1X">
+    <parameter default="1.0" name="FTI_MAG1X_AMP" type="FLOAT">
+      <short_desc>Test input MAG1X amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_MAG1X_BIAS" type="FLOAT">
+      <short_desc>Test input MAG1X bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_MAG1X_EN" type="INT32">
+      <short_desc>Test input MAG1X Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_MAG1X_SD" type="FLOAT">
+      <short_desc>Test input MAG1X standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_MAG1X_TIME" type="FLOAT">
+      <short_desc>Test input MAG1X dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_MAG1X_TYPE" type="INT32">
+      <short_desc>Test Input MAG1X Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input MAG1Y">
+    <parameter default="1.0" name="FTI_MAG1Y_AMP" type="FLOAT">
+      <short_desc>Test input MAG1Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_MAG1Y_BIAS" type="FLOAT">
+      <short_desc>Test input MAG1Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_MAG1Y_EN" type="INT32">
+      <short_desc>Test input MAG1Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_MAG1Y_SD" type="FLOAT">
+      <short_desc>Test input MAG1Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_MAG1Y_TIME" type="FLOAT">
+      <short_desc>Test input MAG1Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_MAG1Y_TYPE" type="INT32">
+      <short_desc>Test Input MAG1Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input MAG1Z">
+    <parameter default="1.0" name="FTI_MAG1Z_AMP" type="FLOAT">
+      <short_desc>Test input MAG1Z amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_MAG1Z_BIAS" type="FLOAT">
+      <short_desc>Test input MAG1Z bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_MAG1Z_EN" type="INT32">
+      <short_desc>Test input MAG1Z Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_MAG1Z_SD" type="FLOAT">
+      <short_desc>Test input MAG1Z standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_MAG1Z_TIME" type="FLOAT">
+      <short_desc>Test input MAG1Z dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_MAG1Z_TYPE" type="INT32">
+      <short_desc>Test Input MAG1Z Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input MAG2X">
+    <parameter default="1.0" name="FTI_MAG2X_AMP" type="FLOAT">
+      <short_desc>Test input MAG2X amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_MAG2X_BIAS" type="FLOAT">
+      <short_desc>Test input MAG2X bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_MAG2X_EN" type="INT32">
+      <short_desc>Test input MAG2X Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_MAG2X_SD" type="FLOAT">
+      <short_desc>Test input MAG2X standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_MAG2X_TIME" type="FLOAT">
+      <short_desc>Test input MAG2X dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_MAG2X_TYPE" type="INT32">
+      <short_desc>Test Input MAG2X Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input MAG2Y">
+    <parameter default="1.0" name="FTI_MAG2Y_AMP" type="FLOAT">
+      <short_desc>Test input MAG2Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_MAG2Y_BIAS" type="FLOAT">
+      <short_desc>Test input MAG2Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_MAG2Y_EN" type="INT32">
+      <short_desc>Test input MAG2Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_MAG2Y_SD" type="FLOAT">
+      <short_desc>Test input MAG2Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_MAG2Y_TIME" type="FLOAT">
+      <short_desc>Test input MAG2Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_MAG2Y_TYPE" type="INT32">
+      <short_desc>Test Input MAG2Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input MAG2Z">
+    <parameter default="1.0" name="FTI_MAG2Z_AMP" type="FLOAT">
+      <short_desc>Test input MAG2Z amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_MAG2Z_BIAS" type="FLOAT">
+      <short_desc>Test input MAG2Z bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_MAG2Z_EN" type="INT32">
+      <short_desc>Test input MAG2Z Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_MAG2Z_SD" type="FLOAT">
+      <short_desc>Test input MAG2Z standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_MAG2Z_TIME" type="FLOAT">
+      <short_desc>Test input MAG2Z dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_MAG2Z_TYPE" type="INT32">
+      <short_desc>Test Input MAG2Z Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input PWM1">
+    <parameter default="1.0" name="FTI_PWM1_AMP" type="FLOAT">
+      <short_desc>Test input PWM1 amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_PWM1_BIAS" type="FLOAT">
+      <short_desc>Test input PWM1 bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_PWM1_EN" type="INT32">
+      <short_desc>Test input PWM1 Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_PWM1_SD" type="FLOAT">
+      <short_desc>Test input PWM1 standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_PWM1_TIME" type="FLOAT">
+      <short_desc>Test input PWM1 dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_PWM1_TYPE" type="INT32">
+      <short_desc>Test Input PWM1 Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input PWM2">
+    <parameter default="1.0" name="FTI_PWM2_AMP" type="FLOAT">
+      <short_desc>Test input PWM2 amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_PWM2_BIAS" type="FLOAT">
+      <short_desc>Test input PWM2 bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_PWM2_EN" type="INT32">
+      <short_desc>Test input PWM2 Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_PWM2_SD" type="FLOAT">
+      <short_desc>Test input PWM2 standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_PWM2_TIME" type="FLOAT">
+      <short_desc>Test input PWM2 dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_PWM2_TYPE" type="INT32">
+      <short_desc>Test Input PWM2 Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input PWM3">
+    <parameter default="1.0" name="FTI_PWM3_AMP" type="FLOAT">
+      <short_desc>Test input PWM3 amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_PWM3_BIAS" type="FLOAT">
+      <short_desc>Test input PWM3 bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_PWM3_EN" type="INT32">
+      <short_desc>Test input PWM3 Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_PWM3_SD" type="FLOAT">
+      <short_desc>Test input PWM3 standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_PWM3_TIME" type="FLOAT">
+      <short_desc>Test input PWM3 dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_PWM3_TYPE" type="INT32">
+      <short_desc>Test Input PWM3 Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input PWM4">
+    <parameter default="1.0" name="FTI_PWM4_AMP" type="FLOAT">
+      <short_desc>Test input PWM4 amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_PWM4_BIAS" type="FLOAT">
+      <short_desc>Test input PWM4 bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_PWM4_EN" type="INT32">
+      <short_desc>Test input PWM4 Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_PWM4_SD" type="FLOAT">
+      <short_desc>Test input PWM4 standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_PWM4_TIME" type="FLOAT">
+      <short_desc>Test input PWM4 dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_PWM4_TYPE" type="INT32">
+      <short_desc>Test Input PWM4 Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input RC_P">
+    <parameter default="1.0" name="FTI_RC_P_AMP" type="FLOAT">
+      <short_desc>Test input RC_P amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_RC_P_BIAS" type="FLOAT">
+      <short_desc>Test input RC_P bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_RC_P_EN" type="INT32">
+      <short_desc>Test input RC_P Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_RC_P_SD" type="FLOAT">
+      <short_desc>Test input RC_P standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_RC_P_TIME" type="FLOAT">
+      <short_desc>Test input RC_P dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_RC_P_TYPE" type="INT32">
+      <short_desc>Test Input RC_P Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input RC_R">
+    <parameter default="1.0" name="FTI_RC_R_AMP" type="FLOAT">
+      <short_desc>Test input RC_R amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_RC_R_BIAS" type="FLOAT">
+      <short_desc>Test input RC_R bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_RC_R_EN" type="INT32">
+      <short_desc>Test input RC_R Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_RC_R_SD" type="FLOAT">
+      <short_desc>Test input RC_R standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_RC_R_TIME" type="FLOAT">
+      <short_desc>Test input RC_R dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_RC_R_TYPE" type="INT32">
+      <short_desc>Test Input RC_R Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input RC_T">
+    <parameter default="1.0" name="FTI_RC_T_AMP" type="FLOAT">
+      <short_desc>Test input RC_T amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_RC_T_BIAS" type="FLOAT">
+      <short_desc>Test input RC_T bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_RC_T_EN" type="INT32">
+      <short_desc>Test input RC_T Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_RC_T_SD" type="FLOAT">
+      <short_desc>Test input RC_T standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_RC_T_TIME" type="FLOAT">
+      <short_desc>Test input RC_T dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_RC_T_TYPE" type="INT32">
+      <short_desc>Test Input RC_T Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
+  <group name="Flight Test Input RC_Y">
+    <parameter default="1.0" name="FTI_RC_Y_AMP" type="FLOAT">
+      <short_desc>Test input RC_Y amplitude</short_desc>
+    </parameter>
+    <parameter default="0.0" name="FTI_RC_Y_BIAS" type="FLOAT">
+      <short_desc>Test input RC_Y bias</short_desc>
+    </parameter>
+    <parameter default="0" name="FTI_RC_Y_EN" type="INT32">
+      <short_desc>Test input RC_Y Enable/Disable</short_desc>
+      <boolean />
+    </parameter>
+    <parameter default="1.0" name="FTI_RC_Y_SD" type="FLOAT">
+      <short_desc>Test input RC_Y standard deviation</short_desc>
+    </parameter>
+    <parameter default="3600.0" name="FTI_RC_Y_TIME" type="FLOAT">
+      <short_desc>Test input RC_Y dwell time</short_desc>
+      <long_desc>Total length of noise injection</long_desc>
+      <min>0</min>
+      <max>3600</max>
+      <unit>s</unit>
+      <decimal>0</decimal>
+    </parameter>
+    <parameter default="0" name="FTI_RC_Y_TYPE" type="INT32">
+      <short_desc>Test Input RC_Y Type</short_desc>
+      <values>
+        <value code="0">None</value>
+        <value code="1">Failure (Off)</value>
+        <value code="2">Gaussian Noise</value>
+        <value code="3">White Noise</value>
+        <value code="4">Pink Noise</value>
+        <value code="5">Brown Noise</value>
+        <value code="6">Blue Noise</value>
+        <value code="7">Violet Noise</value>
+        <value code="8">Grey Noise</value>
+      </values>
+    </parameter>
+  </group>
   <group name="Follow target">
     <parameter default="8.0" name="NAV_FT_DST" type="FLOAT">
       <short_desc>Distance to follow target from</short_desc>
@@ -2857,36 +4004,6 @@ but also ignore less noise</short_desc>
     </parameter>
   </group>
   <group name="GPS">
-    <parameter default="201" name="GPS_1_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for Main GPS</short_desc>
-      <long_desc>Configure on which serial port to run Main GPS.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="GPS_2_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for Secondary GPS</short_desc>
-      <long_desc>Configure on which serial port to run Secondary GPS.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
     <parameter default="0" name="GPS_DUMP_COMM" type="INT32">
       <short_desc>Dump GPS communication to a file</short_desc>
       <long_desc>If this is set to 1, all GPS communication data will be published via uORB, and written to the log file as gps_dump message.</long_desc>
@@ -3015,42 +4132,6 @@ but also ignore less noise</short_desc>
         <value code="0">GPOS</value>
         <value code="1">GPS</value>
       </values>
-    </parameter>
-  </group>
-  <group name="Iridium SBD">
-    <parameter default="0" name="ISBD_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for Iridium (with MAVLink)</short_desc>
-      <long_desc>Configure on which serial port to run Iridium (with MAVLink).</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="ISBD_READ_INT" type="INT32">
-      <short_desc>Satellite radio read interval. Only required to be nonzero if data is not sent using a ring call</short_desc>
-      <min>0</min>
-      <max>5000</max>
-      <unit>s</unit>
-    </parameter>
-    <parameter default="60" name="ISBD_SBD_TIMEOUT" type="INT32">
-      <short_desc>Iridium SBD session timeout</short_desc>
-      <min>0</min>
-      <max>300</max>
-      <unit>s</unit>
-    </parameter>
-    <parameter default="0" name="ISBD_STACK_TIME" type="INT32">
-      <short_desc>Time [ms] the Iridium driver will wait for additional mavlink messages to combine them into one SBD message
-Value 0 turns the functionality off</short_desc>
-      <min>0</min>
-      <max>500</max>
-      <unit>ms</unit>
     </parameter>
   </group>
   <group name="Land Detector">
@@ -3480,21 +4561,6 @@ Used to calculate increased terrain random walk nosie due to movement</short_des
     </parameter>
   </group>
   <group name="MAVLink">
-    <parameter default="101" name="MAV_0_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for MAVLink (instance 0)</short_desc>
-      <long_desc>Configure on which serial port to run MAVLink.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
     <parameter default="1" name="MAV_0_FORWARD" type="INT32">
       <short_desc>Enable MAVLink Message forwarding for instance 0</short_desc>
       <long_desc>If enabled, forward incoming MAVLink messages to other MAVLink ports if the message is either broadcast or the target is not the autopilot. This allows for example a GCS to talk to a camera that is connected to the autopilot via MAVLink (on a different link than the GCS).</long_desc>
@@ -3522,21 +4588,6 @@ Used to calculate increased terrain random walk nosie due to movement</short_des
       <unit>B/s</unit>
       <reboot_required>True</reboot_required>
     </parameter>
-    <parameter default="0" name="MAV_1_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for MAVLink (instance 1)</short_desc>
-      <long_desc>Configure on which serial port to run MAVLink.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
     <parameter default="0" name="MAV_1_FORWARD" type="INT32">
       <short_desc>Enable MAVLink Message forwarding for instance 1</short_desc>
       <long_desc>If enabled, forward incoming MAVLink messages to other MAVLink ports if the message is either broadcast or the target is not the autopilot. This allows for example a GCS to talk to a camera that is connected to the autopilot via MAVLink (on a different link than the GCS).</long_desc>
@@ -3563,21 +4614,6 @@ Used to calculate increased terrain random walk nosie due to movement</short_des
       <min>0</min>
       <unit>B/s</unit>
       <reboot_required>True</reboot_required>
-    </parameter>
-    <parameter default="0" name="MAV_2_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for MAVLink (instance 2)</short_desc>
-      <long_desc>Configure on which serial port to run MAVLink.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
     </parameter>
     <parameter default="0" name="MAV_2_FORWARD" type="INT32">
       <short_desc>Enable MAVLink Message forwarding for instance 2</short_desc>
@@ -3695,49 +4731,6 @@ Used to calculate increased terrain random walk nosie due to movement</short_des
       <short_desc>Use/Accept HIL GPS message even if not in HIL mode</short_desc>
       <long_desc>If set to 1 incoming HIL GPS messages are parsed.</long_desc>
       <boolean />
-    </parameter>
-  </group>
-  <group name="MKBLCTRL Testmode">
-    <parameter default="0" name="MKBLCTRL_TEST" type="INT32">
-      <short_desc>Test mode (Identify) of MKBLCTRL Driver</short_desc>
-      <boolean />
-    </parameter>
-  </group>
-  <group name="MPU9x50 Configuration">
-    <parameter default="4" name="MPU_ACC_LPF_ENM" type="INT32">
-      <short_desc>Low pass filter frequency for Accelerometer</short_desc>
-      <values>
-        <value code="0">MPU9X50_ACC_LPF_460HZ</value>
-        <value code="1">MPU9X50_ACC_LPF_184HZ</value>
-        <value code="2">MPU9X50_ACC_LPF_92HZ</value>
-        <value code="3">MPU9X50_ACC_LPF_41HZ</value>
-        <value code="4">MPU9X50_ACC_LPF_20HZ</value>
-        <value code="5">MPU9X50_ACC_LPF_10HZ</value>
-        <value code="6">MPU9X50_ACC_LPF_5HZ</value>
-        <value code="7">MPU9X50_ACC_LPF_460HZ_NOLPF</value>
-      </values>
-    </parameter>
-    <parameter default="4" name="MPU_GYRO_LPF_ENM" type="INT32">
-      <short_desc>Low pass filter frequency for Gyro</short_desc>
-      <values>
-        <value code="0">MPU9X50_GYRO_LPF_250HZ</value>
-        <value code="1">MPU9X50_GYRO_LPF_184HZ</value>
-        <value code="2">MPU9X50_GYRO_LPF_92HZ</value>
-        <value code="3">MPU9X50_GYRO_LPF_41HZ</value>
-        <value code="4">MPU9X50_GYRO_LPF_20HZ</value>
-        <value code="5">MPU9X50_GYRO_LPF_10HZ</value>
-        <value code="6">MPU9X50_GYRO_LPF_5HZ</value>
-        <value code="7">MPU9X50_GYRO_LPF_3600HZ_NOLPF</value>
-      </values>
-    </parameter>
-    <parameter default="2" name="MPU_SAMPLE_R_ENM" type="INT32">
-      <short_desc>Sample rate in Hz</short_desc>
-      <values>
-        <value code="0">MPU9x50_SAMPLE_RATE_100HZ</value>
-        <value code="1">MPU9x50_SAMPLE_RATE_200HZ</value>
-        <value code="2">MPU9x50_SAMPLE_RATE_500HZ</value>
-        <value code="3">MPU9x50_SAMPLE_RATE_1000HZ</value>
-      </values>
     </parameter>
   </group>
   <group name="Mission">
@@ -4770,16 +5763,6 @@ the setpoint will be capped to MPC_XY_VEL_MAX</short_desc>
     </parameter>
   </group>
   <group name="PWM Outputs">
-    <parameter default="0" name="MOT_ORDERING" type="INT32">
-      <short_desc>Motor Ordering</short_desc>
-      <long_desc>Determines the motor ordering. This can be used for example in combination with a 4-in-1 ESC that assumes a motor ordering which is different from PX4. ONLY supported for Quads. ONLY supported for fmu output (Pixracer or Omnibus F4). When changing this, make sure to test the motor response without props first.</long_desc>
-      <min>0</min>
-      <max>1</max>
-      <values>
-        <value code="0">PX4</value>
-        <value code="1">Betaflight / Cleanflight</value>
-      </values>
-    </parameter>
     <parameter default="0.0" name="MOT_SLEW_MAX" type="FLOAT">
       <short_desc>Minimum motor rise time (slew rate limit)</short_desc>
       <long_desc>Minimum time allowed for the motor input signal to pass through a range of 1000 PWM units. A value x means that the motor signal can only go from 1000 to 2000 PWM in maximum x seconds. Zero means that slew rate limiting is disabled.</long_desc>
@@ -5554,11 +6537,6 @@ the setpoint will be capped to MPC_XY_VEL_MAX</short_desc>
       <unit>Hz</unit>
       <reboot_required>true</reboot_required>
     </parameter>
-    <parameter default="0" name="PWM_SBUS_MODE" type="INT32">
-      <short_desc>S.BUS out</short_desc>
-      <long_desc>Set to 1 to enable S.BUS version 1 output instead of RSSI.</long_desc>
-      <boolean />
-    </parameter>
     <parameter default="0.0" name="THR_MDL_FAC" type="FLOAT">
       <short_desc>Thrust to PWM model parameter</short_desc>
       <long_desc>Parameter used to model the relationship between static thrust and motor input PWM. Model is: thrust = (1-factor)*PWM + factor * PWM^2</long_desc>
@@ -5831,44 +6809,6 @@ the setpoint will be capped to MPC_XY_VEL_MAX</short_desc>
       <unit>s</unit>
       <decimal>1</decimal>
       <increment>0.1</increment>
-    </parameter>
-  </group>
-  <group name="RC Receiver Configuration">
-    <parameter default="1" name="RC_RECEIVER_TYPE" type="INT32">
-      <short_desc>RC receiver type</short_desc>
-      <long_desc>Acceptable values: - RC_RECEIVER_SPEKTRUM = 1, - RC_RECEIVER_LEMONRX = 2,</long_desc>
-    </parameter>
-  </group>
-  <group name="RTPS">
-    <parameter default="0" name="RTPS_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for FastRTPS</short_desc>
-      <long_desc>Configure on which serial port to run FastRTPS.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="RTPS_MAV_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for MAVLink + FastRTPS</short_desc>
-      <long_desc>Configure on which serial port to run MAVLink + FastRTPS.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
     </parameter>
   </group>
   <group name="Radio Calibration">
@@ -6916,45 +7856,6 @@ the setpoint will be capped to MPC_XY_VEL_MAX</short_desc>
         <value code="18">Channel 18</value>
       </values>
     </parameter>
-    <parameter default="0" name="RC_RSSI_PWM_CHAN" type="INT32">
-      <short_desc>PWM input channel that provides RSSI</short_desc>
-      <long_desc>0: do not read RSSI from input channel 1-18: read RSSI from specified input channel Specify the range for RSSI input with RC_RSSI_PWM_MIN and RC_RSSI_PWM_MAX parameters.</long_desc>
-      <min>0</min>
-      <max>18</max>
-      <values>
-        <value code="0">Unassigned</value>
-        <value code="1">Channel 1</value>
-        <value code="2">Channel 2</value>
-        <value code="3">Channel 3</value>
-        <value code="4">Channel 4</value>
-        <value code="5">Channel 5</value>
-        <value code="6">Channel 6</value>
-        <value code="7">Channel 7</value>
-        <value code="8">Channel 8</value>
-        <value code="9">Channel 9</value>
-        <value code="10">Channel 10</value>
-        <value code="11">Channel 11</value>
-        <value code="12">Channel 12</value>
-        <value code="13">Channel 13</value>
-        <value code="14">Channel 14</value>
-        <value code="15">Channel 15</value>
-        <value code="16">Channel 16</value>
-        <value code="17">Channel 17</value>
-        <value code="18">Channel 18</value>
-      </values>
-    </parameter>
-    <parameter default="1000" name="RC_RSSI_PWM_MAX" type="INT32">
-      <short_desc>Max input value for RSSI reading</short_desc>
-      <long_desc>Only used if RC_RSSI_PWM_CHAN &gt; 0</long_desc>
-      <min>0</min>
-      <max>2000</max>
-    </parameter>
-    <parameter default="2000" name="RC_RSSI_PWM_MIN" type="INT32">
-      <short_desc>Min input value for RSSI reading</short_desc>
-      <long_desc>Only used if RC_RSSI_PWM_CHAN &gt; 0</long_desc>
-      <min>0</min>
-      <max>2000</max>
-    </parameter>
     <parameter default="0.0" name="TRIM_PITCH" type="FLOAT">
       <short_desc>Pitch trim</short_desc>
       <long_desc>The trim value is the actuator control value the system needs for straight and level flight. It can be calibrated by flying manually straight and level using the RC trims and copying them using the GCS.</long_desc>
@@ -7111,6 +8012,32 @@ the setpoint will be capped to MPC_XY_VEL_MAX</short_desc>
     <parameter default="0" name="RC_MAP_FLTMODE" type="INT32">
       <short_desc>Single channel flight mode selection</short_desc>
       <long_desc>If this parameter is non-zero, flight modes are only selected by this channel and are assigned to six slots.</long_desc>
+      <min>0</min>
+      <max>18</max>
+      <values>
+        <value code="0">Unassigned</value>
+        <value code="1">Channel 1</value>
+        <value code="2">Channel 2</value>
+        <value code="3">Channel 3</value>
+        <value code="4">Channel 4</value>
+        <value code="5">Channel 5</value>
+        <value code="6">Channel 6</value>
+        <value code="7">Channel 7</value>
+        <value code="8">Channel 8</value>
+        <value code="9">Channel 9</value>
+        <value code="10">Channel 10</value>
+        <value code="11">Channel 11</value>
+        <value code="12">Channel 12</value>
+        <value code="13">Channel 13</value>
+        <value code="14">Channel 14</value>
+        <value code="15">Channel 15</value>
+        <value code="16">Channel 16</value>
+        <value code="17">Channel 17</value>
+        <value code="18">Channel 18</value>
+      </values>
+    </parameter>
+    <parameter default="0" name="RC_MAP_FTI_SW" type="INT32">
+      <short_desc>Flight Test Input switch channel</short_desc>
       <min>0</min>
       <max>18</max>
       <values>
@@ -8288,392 +9215,8 @@ is less than 50% of this value</short_desc>
         <value code="7">Yaw 315°</value>
       </values>
     </parameter>
-    <parameter default="55.0" name="SENS_IMU_TEMP" type="FLOAT">
-      <short_desc>Target IMU temperature</short_desc>
-      <min>0</min>
-      <max>85.0</max>
-      <unit>C</unit>
-      <decimal>3</decimal>
-    </parameter>
-    <parameter default="0.5" name="SENS_IMU_TEMP_FF" type="FLOAT">
-      <short_desc>IMU heater controller feedforward value</short_desc>
-      <min>0</min>
-      <max>1.0</max>
-      <unit>microseconds</unit>
-      <decimal>3</decimal>
-    </parameter>
-    <parameter default="0.025" name="SENS_IMU_TEMP_I" type="FLOAT">
-      <short_desc>IMU heater controller integrator gain value</short_desc>
-      <min>0</min>
-      <max>1.0</max>
-      <unit>microseconds/C</unit>
-      <decimal>3</decimal>
-    </parameter>
-    <parameter default="0.25" name="SENS_IMU_TEMP_P" type="FLOAT">
-      <short_desc>IMU heater controller proportional gain value</short_desc>
-      <min>0</min>
-      <max>1.0</max>
-      <unit>microseconds/C</unit>
-      <decimal>3</decimal>
-    </parameter>
-    <parameter default="0" name="SENS_LEDDAR1_CFG" type="INT32">
-      <short_desc>Serial Configuration for LeddarOne Rangefinder</short_desc>
-      <long_desc>Configure on which serial port to run LeddarOne Rangefinder.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="SENS_SF0X_CFG" type="INT32">
-      <short_desc>Serial Configuration for Lightware Laser Rangefinder</short_desc>
-      <long_desc>Configure on which serial port to run Lightware Laser Rangefinder.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="1442826" name="SENS_TEMP_ID" type="INT32">
-      <short_desc>Target IMU device ID to regulate temperature</short_desc>
-    </parameter>
-    <parameter default="0" name="SENS_TFMINI_CFG" type="INT32">
-      <short_desc>Serial Configuration for Benewake TFmini Rangefinder</short_desc>
-      <long_desc>Configure on which serial port to run Benewake TFmini Rangefinder.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="SENS_ULAND_CFG" type="INT32">
-      <short_desc>Serial Configuration for uLanding Radar</short_desc>
-      <long_desc>Configure on which serial port to run uLanding Radar.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-  </group>
-  <group name="Serial">
-    <parameter default="0" name="SER_GPS1_BAUD" type="INT32">
-      <short_desc>Baudrate for the GPS 1 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the GPS 1 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="SER_GPS2_BAUD" type="INT32">
-      <short_desc>Baudrate for the GPS 2 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the GPS 2 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-    <parameter default="57600" name="SER_TEL1_BAUD" type="INT32">
-      <short_desc>Baudrate for the TELEM 1 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the TELEM 1 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-    <parameter default="921600" name="SER_TEL2_BAUD" type="INT32">
-      <short_desc>Baudrate for the TELEM 2 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the TELEM 2 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-    <parameter default="57600" name="SER_TEL3_BAUD" type="INT32">
-      <short_desc>Baudrate for the TELEM 3 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the TELEM 3 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-    <parameter default="57600" name="SER_TEL4_BAUD" type="INT32">
-      <short_desc>Baudrate for the TELEM/SERIAL 4 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the TELEM/SERIAL 4 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-    <parameter default="57600" name="SER_URT6_BAUD" type="INT32">
-      <short_desc>Baudrate for the UART 6 Serial Port</short_desc>
-      <long_desc>Configure the Baudrate for the UART 6 Serial Port. Note: certain drivers such as the GPS can determine the Baudrate automatically.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Auto</value>
-        <value code="50">50 8N1</value>
-        <value code="75">75 8N1</value>
-        <value code="110">110 8N1</value>
-        <value code="134">134 8N1</value>
-        <value code="150">150 8N1</value>
-        <value code="200">200 8N1</value>
-        <value code="300">300 8N1</value>
-        <value code="600">600 8N1</value>
-        <value code="1200">1200 8N1</value>
-        <value code="1800">1800 8N1</value>
-        <value code="2400">2400 8N1</value>
-        <value code="4800">4800 8N1</value>
-        <value code="9600">9600 8N1</value>
-        <value code="19200">19200 8N1</value>
-        <value code="38400">38400 8N1</value>
-        <value code="57600">57600 8N1</value>
-        <value code="115200">115200 8N1</value>
-        <value code="230400">230400 8N1</value>
-        <value code="460800">460800 8N1</value>
-        <value code="500000">500000 8N1</value>
-        <value code="921600">921600 8N1</value>
-        <value code="1000000">1000000 8N1</value>
-        <value code="1500000">1500000 8N1</value>
-        <value code="2000000">2000000 8N1</value>
-        <value code="3000000">3000000 8N1</value>
-      </values>
-    </parameter>
-  </group>
-  <group name="Snapdragon UART ESC">
-    <parameter default="250000" name="UART_ESC_BAUD" type="INT32">
-      <short_desc>ESC UART baud rate</short_desc>
-      <long_desc>Default rate is 250Kbps, whic is used in off-the-shelf QRP ESC products.</long_desc>
-    </parameter>
-    <parameter default="2" name="UART_ESC_MODEL" type="INT32">
-      <short_desc>ESC model</short_desc>
-      <long_desc>See esc_model_t enum definition in uart_esc_dev.h for all supported ESC model enum values.</long_desc>
-      <values>
-        <value code="0">ESC_200QX</value>
-        <value code="1">ESC_350QX</value>
-        <value code="2">ESC_210QC</value>
-      </values>
-    </parameter>
-    <parameter default="4" name="UART_ESC_MOTOR1" type="INT32">
-      <short_desc>Motor 1 Mapping</short_desc>
-    </parameter>
-    <parameter default="2" name="UART_ESC_MOTOR2" type="INT32">
-      <short_desc>Motor 2 Mapping</short_desc>
-    </parameter>
-    <parameter default="1" name="UART_ESC_MOTOR3" type="INT32">
-      <short_desc>Motor 3 Mapping</short_desc>
-    </parameter>
-    <parameter default="3" name="UART_ESC_MOTOR4" type="INT32">
-      <short_desc>Motor 4 Mapping</short_desc>
-    </parameter>
-  </group>
-  <group name="Subscriber Example">
-    <parameter default="100" name="SUB_INTERV" type="INT32">
-      <short_desc>Interval of one subscriber in the example in ms</short_desc>
-      <unit>ms</unit>
-    </parameter>
-    <parameter default="3.14" name="SUB_TESTF" type="FLOAT">
-      <short_desc>Float Demonstration Parameter in the Example</short_desc>
-    </parameter>
-  </group>
-  <group name="Syslink">
-    <parameter default="231" name="SLNK_RADIO_ADDR1" type="INT32">
-      <short_desc>Operating address of the NRF51 (most significant byte)</short_desc>
-    </parameter>
-    <parameter default="3890735079" name="SLNK_RADIO_ADDR2" type="INT32">
-      <short_desc>Operating address of the NRF51 (least significant 4 bytes)</short_desc>
-    </parameter>
-    <parameter default="80" name="SLNK_RADIO_CHAN" type="INT32">
-      <short_desc>Operating channel of the NRF51</short_desc>
-      <min>0</min>
-      <max>125</max>
-    </parameter>
-    <parameter default="2" name="SLNK_RADIO_RATE" type="INT32">
-      <short_desc>Operating datarate of the NRF51</short_desc>
-      <min>0</min>
-      <max>2</max>
-    </parameter>
   </group>
   <group name="System">
-    <parameter default="15" name="LED_RGB_MAXBRT" type="INT32">
-      <short_desc>RGB Led brightness limit</short_desc>
-      <long_desc>Set to 0 to disable, 1 for minimum brightness up to 15 (max)</long_desc>
-      <min>0</min>
-      <max>15</max>
-    </parameter>
     <parameter default="0" name="SYS_AUTOCONFIG" type="INT32">
       <short_desc>Automatically configure default values</short_desc>
       <long_desc>Set to 1 to reset parameters on next system startup (setting defaults). Platform-specific values are used if available. RC* parameters are preserved.</long_desc>
@@ -8759,12 +9302,6 @@ is less than 50% of this value</short_desc>
         <value code="6460800">RTPS Client (460800 baud)</value>
       </values>
     </parameter>
-    <parameter default="1" name="SYS_FMU_TASK" type="INT32">
-      <short_desc>Run the FMU as a task to reduce latency</short_desc>
-      <long_desc>If true, the FMU will run in a separate task instead of on the work queue. Set this if low latency is required, for example for racing. This is a trade-off between RAM usage and latency: running as a task, it requires a separate stack and directly polls on the control topics, whereas running on the work queue, it runs at a fixed update rate.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
     <parameter default="1" name="SYS_HAS_BARO" type="INT32">
       <short_desc>Control if the vehicle has a barometer</short_desc>
       <long_desc>Disable this if the board has no barometer, such as some of the the Omnibus F4 SD variants. If disabled, the preflight checks will not check for the presence of a barometer.</long_desc>
@@ -8813,46 +9350,6 @@ is less than 50% of this value</short_desc>
     <parameter default="1" name="SYS_STCK_EN" type="INT32">
       <short_desc>Enable stack checking</short_desc>
       <boolean />
-    </parameter>
-    <parameter default="1" name="SYS_USE_IO" type="INT32">
-      <short_desc>Set usage of IO board</short_desc>
-      <long_desc>Can be used to use a standard startup script but with a FMU only set-up. Set to 0 to force the FMU only set-up.</long_desc>
-      <min>0</min>
-      <max>1</max>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-  </group>
-  <group name="Telemetry">
-    <parameter default="0" name="TEL_FRSKY_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for FrSky Telemetry</short_desc>
-      <long_desc>Configure on which serial port to run FrSky Telemetry.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
-    </parameter>
-    <parameter default="0" name="TEL_HOTT_CONFIG" type="INT32">
-      <short_desc>Serial Configuration for HoTT Telemetry</short_desc>
-      <long_desc>Configure on which serial port to run HoTT Telemetry.</long_desc>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="6">UART 6</value>
-        <value code="101">TELEM 1</value>
-        <value code="102">TELEM 2</value>
-        <value code="103">TELEM 3</value>
-        <value code="104">TELEM/SERIAL 4</value>
-        <value code="201">GPS 1</value>
-        <value code="202">GPS 2</value>
-      </values>
     </parameter>
   </group>
   <group name="Testing">
@@ -9370,62 +9867,6 @@ is less than 50% of this value</short_desc>
       <min>0</min>
       <max>1</max>
       <boolean />
-    </parameter>
-  </group>
-  <group name="UAVCAN">
-    <parameter default="1000000" name="CANNODE_BITRATE" type="INT32">
-      <short_desc>UAVCAN CAN bus bitrate</short_desc>
-      <min>20000</min>
-      <max>1000000</max>
-    </parameter>
-    <parameter default="120" name="CANNODE_NODE_ID" type="INT32">
-      <short_desc>UAVCAN Node ID</short_desc>
-      <long_desc>Read the specs at http://uavcan.org to learn more about Node ID.</long_desc>
-      <min>1</min>
-      <max>125</max>
-    </parameter>
-    <parameter default="1000000" name="ESC_BITRATE" type="INT32">
-      <short_desc>UAVCAN CAN bus bitrate</short_desc>
-      <min>20000</min>
-      <max>1000000</max>
-    </parameter>
-    <parameter default="120" name="ESC_NODE_ID" type="INT32">
-      <short_desc>UAVCAN Node ID</short_desc>
-      <long_desc>Read the specs at http://uavcan.org to learn more about Node ID.</long_desc>
-      <min>1</min>
-      <max>125</max>
-    </parameter>
-    <parameter default="1000000" name="UAVCAN_BITRATE" type="INT32">
-      <short_desc>UAVCAN CAN bus bitrate</short_desc>
-      <min>20000</min>
-      <max>1000000</max>
-      <unit>bit/s</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="UAVCAN_ENABLE" type="INT32">
-      <short_desc>UAVCAN mode</short_desc>
-      <long_desc>0 - UAVCAN disabled. 1 - Enables support for UAVCAN sensors without dynamic node ID allocation and firmware update. 2 - Enables support for UAVCAN sensors with dynamic node ID allocation and firmware update. 3 - Enables support for UAVCAN sensors and actuators with dynamic node ID allocation and firmware update. Also sets the motor control outputs to UAVCAN.</long_desc>
-      <min>0</min>
-      <max>3</max>
-      <reboot_required>true</reboot_required>
-      <values>
-        <value code="0">Disabled</value>
-        <value code="1">Sensors Manual Config</value>
-        <value code="2">Sensors Automatic Config</value>
-        <value code="3">Sensors and Actuators (ESCs) Automatic Config</value>
-      </values>
-    </parameter>
-    <parameter default="1" name="UAVCAN_ESC_IDLT" type="INT32">
-      <short_desc>UAVCAN ESC will spin at idle throttle when armed, even if the mixer outputs zero setpoints</short_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="1" name="UAVCAN_NODE_ID" type="INT32">
-      <short_desc>UAVCAN Node ID</short_desc>
-      <long_desc>Read the specs at http://uavcan.org to learn more about Node ID.</long_desc>
-      <min>1</min>
-      <max>125</max>
-      <reboot_required>true</reboot_required>
     </parameter>
   </group>
   <group name="VTOL Attitude Control">
