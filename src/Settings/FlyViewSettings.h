@@ -16,7 +16,11 @@ class FlyViewSettings : public SettingsGroup
     Q_OBJECT
 public:
     FlyViewSettings(QObject* parent = nullptr);
+
     DEFINE_SETTING_NAME_GROUP()
+
     DEFINE_SETTINGFACT(guidedMinimumAltitude)
     DEFINE_SETTINGFACT(guidedMaximumAltitude)
+    DEFINE_SETTINGFACT(showLogReplayStatusBar)
+    DEFINE_SETTINGFACT(alternateInstrumentPanel)
 };

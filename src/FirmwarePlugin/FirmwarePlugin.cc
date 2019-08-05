@@ -14,13 +14,14 @@
 #include "SettingsManager.h"
 #include "AppSettings.h"
 #include "QGCFileDownload.h"
+#include "QGCCameraManager.h"
 
 #include <QRegularExpression>
 #include <QDebug>
 
 QGC_LOGGING_CATEGORY(FirmwarePluginLog, "FirmwarePluginLog")
 
-static FirmwarePluginFactoryRegister* _instance = NULL;
+static FirmwarePluginFactoryRegister* _instance = nullptr;
 
 const QString guided_mode_not_supported_by_vehicle = QObject::tr("Guided mode not supported by Vehicle.");
 
@@ -126,7 +127,7 @@ bool FirmwarePlugin::supportsThrottleModeCenterZero(void)
     return true;
 }
 
-bool FirmwarePlugin::supportsNegativeThrust(void)
+bool FirmwarePlugin::supportsNegativeThrust(Vehicle* /*vehicle*/)
 {
     // By default, this is not supported
     return false;
@@ -195,22 +196,16 @@ QString FirmwarePlugin::missionCommandOverrides(MAV_TYPE vehicleType) const
     switch (vehicleType) {
     case MAV_TYPE_GENERIC:
         return QStringLiteral(":/json/MavCmdInfoCommon.json");
-        break;
     case MAV_TYPE_FIXED_WING:
         return QStringLiteral(":/json/MavCmdInfoFixedWing.json");
-        break;
     case MAV_TYPE_QUADROTOR:
         return QStringLiteral(":/json/MavCmdInfoMultiRotor.json");
-        break;
     case MAV_TYPE_VTOL_QUADROTOR:
         return QStringLiteral(":/json/MavCmdInfoVTOL.json");
-        break;
     case MAV_TYPE_SUBMARINE:
         return QStringLiteral(":/json/MavCmdInfoSub.json");
-        break;
     case MAV_TYPE_GROUND_ROVER:
         return QStringLiteral(":/json/MavCmdInfoRover.json");
-        break;
     default:
         qWarning() << "FirmwarePlugin::missionCommandOverrides called with bad MAV_TYPE:" << vehicleType;
         return QString();
@@ -245,10 +240,11 @@ void FirmwarePlugin::pauseVehicle(Vehicle* vehicle)
     qgcApp()->showMessage(guided_mode_not_supported_by_vehicle);
 }
 
-void FirmwarePlugin::guidedModeRTL(Vehicle* vehicle)
+void FirmwarePlugin::guidedModeRTL(Vehicle* vehicle, bool smartRTL)
 {
     // Not supported by generic vehicle
     Q_UNUSED(vehicle);
+    Q_UNUSED(smartRTL);
     qgcApp()->showMessage(guided_mode_not_supported_by_vehicle);
 }
 
@@ -326,16 +322,19 @@ const QVariantList &FirmwarePlugin::toolBarIndicators(const Vehicle* vehicle)
     Q_UNUSED(vehicle);
     //-- Default list of indicators for all vehicles.
     if(_toolBarIndicatorList.size() == 0) {
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/MessageIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/GPSIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/TelemetryRSSIIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/RCRSSIIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/BatteryIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/ModeIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/VTOLModeIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/ArmedIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/GPSRTKIndicator.qml")));
-        _toolBarIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/LinkIndicator.qml")));
+        _toolBarIndicatorList = QVariantList({
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/MultiVehicleSelector.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/MessageIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/GPSIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/TelemetryRSSIIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/RCRSSIIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/BatteryIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/ModeIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/VTOLModeIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/ArmedIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/GPSRTKIndicator.qml")),
+            QVariant::fromValue(QUrl::fromUserInput("qrc:/toolbar/LinkIndicator.qml")),
+        });
     }
     return _toolBarIndicatorList;
 }
@@ -348,7 +347,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         CameraMetaData* metaData;
 
         metaData = new CameraMetaData(
-            tr("Canon S100 @ 5.2mm f/2"),
+            //tr("Canon S100 @ 5.2mm f/2"),
+            tr("Canon S100 PowerShot"),
             7.6,                 // sensorWidth
             5.7,                 // sensorHeight
             4000,                // imageWidth
@@ -361,7 +361,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Canon EOS-M 22mm f/2"),
+            //tr("Canon EOS-M 22mm f/2"),
+            tr("Canon EOS-M 22mm"),
             22.3,                // sensorWidth
             14.9,                // sensorHeight
             5184,                // imageWidth
@@ -374,7 +375,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Canon G9X @ 10.2mm f/2"),
+            //tr("Canon G9X @ 10.2mm f/2"),
+            tr("Canon G9 X PowerShot"),
             13.2,                // sensorWidth
             8.8,                 // sensorHeight
             5488,                // imageWidth
@@ -387,7 +389,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Canon SX260 HS @ 4.5mm f/3.5"),
+            //tr("Canon SX260 HS @ 4.5mm f/3.5"),
+            tr("Canon SX260 HS PowerShot"),
             6.17,                // sensorWidth
             4.55,                // sensorHeight
             4000,                // imageWidth
@@ -413,7 +416,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Parrot Sequoia RGB"),
+            //tr("Parrot Sequoia RGB"),
+            tr("Parrot Sequioa RGB"),
             6.17,               // sensorWidth
             4.63,               // sendsorHeight
             4608,               // imageWidth
@@ -426,7 +430,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Parrot Sequoia Monochrome"),
+            //tr("Parrot Sequoia Monochrome"),
+            tr("Parrot Sequioa Monochrome"),
             4.8,                // sensorWidth
             3.6,                // sendsorHeight
             1280,               // imageWidth
@@ -452,7 +457,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Ricoh GR II 18.3mm f/2.8"),
+            //tr("Ricoh GR II 18.3mm f/2.8"),
+            tr("Ricoh GR II"),
             23.7,               // sensorWidth
             15.7,               // sendsorHeight
             4928,               // imageWidth
@@ -492,7 +498,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
 
         metaData = new CameraMetaData(
             //-- http://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-6000-body-kit#product_details_default
-            tr("Sony a6000 Sony 16mm f/2.8"),
+            //tr("Sony a6000 Sony 16mm f/2.8"),
+            tr("Sony a6000 16mm"),
             23.5,               // sensorWidth
             15.6,               // sensorHeight
             6000,               // imageWidth
@@ -572,7 +579,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         metaData = new CameraMetaData(
             //-- http://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-qx1-body-kit/specifications
             //-- http://www.sony.com/electronics/camera-lenses/sel16f28/specifications
-            tr("Sony ILCE-QX1 Sony 16mm f/2.8"),
+            //tr("Sony ILCE-QX1 Sony 16mm f/2.8"),
+            tr("Sony ILCE-QX1"),
             23.2,                // sensorWidth
             15.4,                // sensorHeight
             5456,                // imageWidth
@@ -586,7 +594,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
 
         metaData = new CameraMetaData(
             //-- http://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-qx1-body-kit/specifications
-            tr("Sony NEX-5R Sony 20mm f/2.8"),
+            //tr("Sony NEX-5R Sony 20mm f/2.8"),
+            tr("Sony NEX-5R 20mm"),
             23.2,                // sensorWidth
             15.4,                // sensorHeight
             4912,                // imageWidth
@@ -599,7 +608,8 @@ const QVariantList& FirmwarePlugin::cameraList(const Vehicle* vehicle)
         _cameraList.append(QVariant::fromValue(metaData));
 
         metaData = new CameraMetaData(
-            tr("Sony RX100 II @ 10.4mm f/1.8"),
+            //tr("Sony RX100 II @ 10.4mm f/1.8"),
+            tr("Sony RX100 II 28mm"),
             13.2,                // sensorWidth
             8.8,                 // sensorHeight
             5472,                // imageWidth
@@ -740,9 +750,9 @@ bool FirmwarePlugin::_setFlightModeAndValidate(Vehicle* vehicle, const QString& 
 void FirmwarePlugin::batteryConsumptionData(Vehicle* vehicle, int& mAhBattery, double& hoverAmps, double& cruiseAmps) const
 {
     Q_UNUSED(vehicle);
-    mAhBattery = 0;
-    hoverAmps = 0;
-    cruiseAmps = 0;
+    mAhBattery  = 0;
+    hoverAmps   = 0;
+    cruiseAmps  = 0;
 }
 
 QString FirmwarePlugin::autoDisarmParameter(Vehicle* vehicle)
@@ -778,17 +788,12 @@ bool FirmwarePlugin::isVtol(const Vehicle* vehicle) const
 
 QGCCameraManager* FirmwarePlugin::createCameraManager(Vehicle* vehicle)
 {
-    Q_UNUSED(vehicle);
-    return nullptr;
+    return new QGCCameraManager(vehicle);
 }
 
 QGCCameraControl* FirmwarePlugin::createCameraControl(const mavlink_camera_information_t *info, Vehicle *vehicle, int compID, QObject* parent)
 {
-    Q_UNUSED(info);
-    Q_UNUSED(vehicle);
-    Q_UNUSED(compID);
-    Q_UNUSED(parent);
-    return nullptr;
+    return new QGCCameraControl(info, vehicle, compID, parent);
 }
 
 uint32_t FirmwarePlugin::highLatencyCustomModeTo32Bits(uint16_t hlCustomMode)
